@@ -1,0 +1,22 @@
+.solutions {
+  text-align: center;
+
+  &-platform {
+    padding: 5rem;
+    background-color: $color-grey-light-1;
+    color: rgb(70, 70, 70);
+  }
+
+  &-provider {
+    padding: 10rem 0;
+    background-color: $color-primary;
+    color: #eeeeee;
+    text-align: center;
+
+    h1 {
+      width: 50%;
+      margin: 0 auto;
+      padding-bottom: 3rem;
+    }
+  }
+}

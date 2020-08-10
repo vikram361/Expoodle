@@ -1,0 +1,43 @@
+.navbar {
+  width: 100%;
+  height: 8vh;
+  box-shadow: 0rem 0.5rem 0.5rem rgb(236, 236, 236);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 10rem;
+
+  &__logo {
+    height: 7vh;
+    width: 10rem;
+
+    background-image: url(../img/logo.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    padding-top: 3rem;
+  }
+
+  &__links {
+    flex: 0 0 40%;
+  }
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.btn {
+  background: none;
+  border: none;
+  color: white;
+  background-color: $color-primary;
+  padding: 1rem 3rem;
+  border-radius: 20rem;
+}

@@ -1,0 +1,35 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem 10rem;
+
+  &__content {
+    flex: 0 0 50%;
+  }
+
+  &__img {
+    width: 60vw;
+    height: 40vw;
+    background-image: url(../img/hero-img.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+.about{
+    width: 80%;
+    text-align: center;
+    padding: 5rem 10rem;
+    margin: 0 auto;
+
+    &-heading{
+        font-size: 3rem;
+        padding-bottom: 2rem;
+    }
+
+    &-para{
+        font-size: 1.3rem;
+    }
+}
