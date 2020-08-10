@@ -18,6 +18,10 @@
   border: none;
   background-color: $color-grey-light-1;
   padding: 1rem 10rem 1rem 1rem;
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 1rem;
+  }
 }
 
 .email-btn{
@@ -28,4 +32,8 @@
     padding: 1rem 5rem;
     border-top-right-radius: 10rem;
     border-bottom-right-radius: 10rem;
+
+    @media only screen and (max-width: $bp-small) {
+      padding: 1rem 3rem;
+    }
 }

@@ -4,6 +4,21 @@
   display: flex;
   justify-content: space-between;
 
+  @media only screen and (max-width: $bp-large) {
+    padding: 5rem 10rem;
+    padding-bottom: 30rem;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    flex-direction: column;
+    padding-bottom: unset;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    flex: 0 0 100%;
+    padding: 5rem;
+  }
+
   &-heading {
     flex: 0 0 50%;
     background-color: $color-grey-light-1;
@@ -21,6 +36,11 @@
       font-weight: 600;
       padding-bottom: 1.5rem;
     }
+
+    @media only screen and (max-width: $bp-small) {
+      flex: 0 0 100%;
+      padding: 4rem 1rem 20rem 1rem;
+    }
   }
 
   &-description {
@@ -29,6 +49,14 @@
     color: #ffffff;
     transform: translateY(10rem) translateX(-12rem);
 
+    @media only screen and (max-width: $bp-medium) {
+      transform: translateY(-30rem) translateX(5rem);
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      transform: translateY(-20rem) translateX(3rem);
+    }
+
     &-img {
       width: 100%;
       height: 40vh;
@@ -36,6 +64,10 @@
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
+
+      @media only screen and (max-width: $bp-medium) {
+       height: 20vh;
+      }
     }
 
     &-content {

@@ -17,6 +17,10 @@
       width: 50%;
       margin: 0 auto;
       padding-bottom: 3rem;
+
+      @media only screen and (max-width: $bp-small) {
+        width: 90%;
+      }
     }
   }
 }

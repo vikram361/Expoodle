@@ -1,6 +1,14 @@
 .service {
   padding: 5rem 25rem;
 
+  @media only screen and (max-width: $bp-large) {
+    padding: 5rem 10rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 5rem;
+  }
+
   &-heading {
     text-align: center;
     font-size: 2.5rem;
@@ -15,6 +23,10 @@
   &-content {
     display: flex;
     justify-content: space-between;
+
+    @media only screen and (max-width: $bp-medium) {
+      flex-direction: column;
+    }
   }
 }
 
@@ -22,6 +34,10 @@
   flex: 0 0 48%;
   padding: 7rem 5rem;
   background-color: $color-secondary;
+
+  @media only screen and (max-width: $bp-medium) {
+    margin-bottom: 3rem;
+  }
 
   h1 {
     padding-bottom: 3rem;
@@ -69,6 +85,10 @@
   flex: 0 0 48%;
   background-color: $color-grey-light-2;
   padding: 7rem 5rem;
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 5rem 3rem;
+  }
 
   h1 {
     font-size: 3rem;

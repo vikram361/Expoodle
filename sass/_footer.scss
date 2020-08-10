@@ -9,6 +9,10 @@
     display: flex;
     justify-content: space-between;
     align-self: center;
+
+    @media only screen and (max-width: $bp-small) {
+      width: 40%;
+    }
   }
 }
 
@@ -27,15 +31,17 @@
   justify-content: space-between;
   border-bottom: 0.5px solid rgb(128, 128, 128);
   padding-bottom: 3rem;
+
+
 }
 
-.footer-logo {
-  width: 10vw;
-  background-image: url(../img/logo.png);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
+// .footer-logo {
+//   width: 10vw;
+//   background-image: url(../img/logo.png);
+//   background-position: center;
+//   background-size: contain;
+//   background-repeat: no-repeat;
+// }
 
 .footer-about {
   flex: 0 0 30%;
@@ -49,6 +55,10 @@
 .footer-about-div {
   display: flex;
   justify-content: space-between;
+
+  @media only screen and (max-width: $bp-small) {
+    flex-direction: column;
+  }
 
   ul {
     list-style: none;

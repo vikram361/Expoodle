@@ -7,6 +7,15 @@
   align-items: center;
   padding: 0rem 10rem;
 
+  @media only screen and (max-width: $bp-medium) {
+    padding: 0rem 4rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    flex-direction: column;
+    padding: 0;
+  }
+
   &__logo {
     height: 7vh;
     width: 10rem;
@@ -21,6 +30,15 @@
 
   &__links {
     flex: 0 0 40%;
+
+    @media only screen and (max-width: $bp-large) {
+      flex: 0 0 60%;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      flex: 0 0 90%;
+      min-width: 90%;
+    }
   }
 }
 
@@ -40,4 +58,9 @@
   background-color: $color-primary;
   padding: 1rem 3rem;
   border-radius: 20rem;
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 0.5rem 2rem;
+    font-size: 1.2rem;
+  }
 }
